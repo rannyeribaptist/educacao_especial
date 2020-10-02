@@ -1,0 +1,26 @@
+// .slick-next, .slick-prev {
+//   position: sticky !important;
+//   top: unset !important;
+//
+//   &:before {
+//     color: black !important;
+//   }
+// }
+//
+// .slick-prev {
+//   margin-top: 4%;
+//   float: left;
+// }
+//
+// .slick-next {
+//   margin-top: -5%;
+//   float: right;
+// }
+
+.slick-dots {
+  position: static !important;
+}
+
+.slick-track {
+  padding-bottom: 20px;
+}
