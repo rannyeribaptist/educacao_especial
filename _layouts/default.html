@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#0c0c0c">
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+
+  {% feed_meta %}
+  {% seo %}
+</head>
+
+<body class="animate__animated animate__fadeIn">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__mobile">
+      <div class="navbar__padding">
+        <a class="toggle-navbar"><img src="https://icongr.am/entypo/menu.svg?color=13B3F2" alt="menu-icon"></a>
+        <!-- This could be an svg but I thought it would make a nice easter egg making the number switching from 0 to 1 -->
+        <a href="#"><img id="logo" class="logo-small" src="assets/images/0.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="navbar__content">
+      <div class="navbar__padding">
+        <a href="#"><img class="logo-small" src="assets/images/baptist-software-logo.png" alt=""></a>
+        <ul class="navbar__links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="text--white">
+    <div class="section__content">
+      <img class="logo-footer center" src="assets/images/logo-white.png" alt="white-baptist-software-logo">
+
+      <div class="footer-links center">
+        <a target="_blank" href="https://github.com/rannyeribaptist"><img src="https://icongr.am/entypo/github.svg?size=20px&color=ffffff" alt="github-icon"> Github</a>
+        <a target="_blank" href="portfolio.html"><img src="https://icongr.am/entypo/layers.svg?size=20px&color=ffffff" alt="portfolio-icon"> Portfólio</a>
+        <a href="tel:+5581998590619"><img src="https://icongr.am/entypo/phone.svg?size=20px&color=ffffff" alt="phone-icon"> +55 81 99859-0619</a>
+        <a href="mailto:rannyeri@baptist.team"><img src="https://icongr.am/entypo/email.svg?size=20px&color=ffffff" alt="email-icon"> rannyeri@baptist.team</a>
+      </div>
+
+    </div>
+
+    <small>© 2019 Baptist Software - Todos os direitos reservados.</small>
+    <small>CNPJ: 34.167.274/0001-91</small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascripts/script.js"></script>
+
+  <!-- Slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('#slider').slick({
+      swipeToSlide: false,
+      draggable: false,
+      touchMove: false,
+      swipe: false
+    });
+  </script>
+</body>
+</html>
