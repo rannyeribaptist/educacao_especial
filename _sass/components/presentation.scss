@@ -1,0 +1,17 @@
+@import "variables";
+
+.presentation {
+  text-align: center;
+  background-image: linear-gradient($white, $light-grey);
+
+  &__slider {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    @include breakpoint("limiter");
+  }
+}
