@@ -9,6 +9,7 @@
 @import "components/presentation";
 @import "components/course";
 @import "components/videos";
+@import "components/services";
 @import "components/navbar";
 @import "components/footer";
 
@@ -34,4 +35,8 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }

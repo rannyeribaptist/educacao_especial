@@ -1,0 +1,12 @@
+@import "variables";
+
+.services {
+  background-color: $blue;
+  color: white;
+  text-align: center;
+
+  &__content {
+    padding: 20px;
+    @include breakpoint("limiter");
+  }
+}
