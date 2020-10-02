@@ -1,31 +1,25 @@
 @import "variables";
 
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
-  background-color: #ffffffd9;
-  z-index: 999;
+  background-color: $white;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  a {
+    font-weight: 600;
+    color: black;
+  }
 
-  a { font-weight: 600 }
+  &__toggle { float: right }
 
-  &--static { position: unset }
-
-  &__padding { padding: 20px }
+  &__padding {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__mobile {
     width: 100%;
-
-    #logo, #logo-project {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-    }
 
     @include breakpoint("medium") { display: none }
   }

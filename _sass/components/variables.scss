@@ -1,10 +1,13 @@
 // Colors
-$blue: #13B3F2;
-$black: #0D0D0D;
-$pink: #F23D5E;
-$red: #F20505;
+$light-blue: #00AFEF;
+$blue: #0078A3;
+$black: #1A1A1A;
 $white: white;
-$grey: #4B4B4B;
+$pink: #F01849;
+$red: #FF0000;
+$light-grey: #DEDEDE;
+$grey: #707070;
+$yellow: #F0E200;
 
 // Breakpoints
 @mixin breakpoint($value) {
@@ -53,22 +56,39 @@ $grey: #4B4B4B;
 // Managing theme colors with a mixin
 @mixin colors($attribute) {
   @if $attribute == color {
-    &--blue { color: $blue };
-    &--black { color: $black };
-    &--pink { color: $pink };
-    &--white { color: $white };
+    &--light-blue { color: $light-blue; }
+    &--blue { color: $blue; }
+    &--black { color: $black; }
+    &--white { color: $white; }
+    &--pink { color: $pink; }
+    &--red { color: $red; }
+    &--light-grey { color: $light-grey; }
+    &--grey { color: $grey; }
+    &--yellow { color: $yellow; }
   }
 
   @else if $attribute == background-color {
-    &--blue { background-color: $blue };
-    &--black { background-color: $black };
-    &--pink { background-color: $pink };
+    &--light-blue { background-color: $light-blue; }
+    &--blue { background-color: $blue; }
+    &--black { background-color: $black; }
+    &--white { background-color: $white; }
+    &--pink { background-color: $pink; }
+    &--red { background-color: $red; }
+    &--light-grey { background-color: $light-grey; }
+    &--grey { background-color: $grey; }
+    &--yellow { background-color: $yellow; }
   }
 
   @else if $attribute == border-color {
-    &--blue { border-color: $blue };
-    &--black { border-color: $black };
-    &--pink { border-color: $pink };
+    &--light-blue { border-color: $light-blue; }
+    &--blue { border-color: $blue; }
+    &--black { border-color: $black; }
+    &--white { border-color: $white; }
+    &--pink { border-color: $pink; }
+    &--red { border-color: $red; }
+    &--light-grey { border-color: $light-grey; }
+    &--grey { border-color: $grey; }
+    &--yellow { border-color: $yellow; }
   }
 }
 
@@ -101,19 +121,4 @@ $grey: #4B4B4B;
 @font-face {
   font-family: "gothamxlightitalic";
   src: url("../fonts/Gotham-XLightita.otf") format("opentype");
-}
-
-// CSS animations
-@keyframes bgcolor {
-    0% {
-      opacity: 0%;
-    }
-
-    50% {
-      opacity: 100%;
-    }
-
-    100% {
-      opacity: 0%;
-    }
 }
