@@ -1,0 +1,10 @@
+@import "variables";
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+
+  &--black { color: white}
+  @include colors("background-color");
+}
