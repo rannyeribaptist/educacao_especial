@@ -1,0 +1,26 @@
+---
+layout: default
+title: Eventos
+---
+
+<div class="section section--gradient">
+  <div class="section__content text-center">
+    <h1>Eventos</h1>
+
+    <br>
+
+    {% for event in site.events %}
+      <div class="content-card">
+        <img class="content-card__thumb" src="{{ event.thumb }}" alt="event-thumbnail">
+        <div class="content-card__content">
+          <h3>{{ event.title }}</h3>
+          <p>{{ event.description }}</p>
+          <a href="{{ event.url }}">
+            <button class="button button--light-blue color--white" name="button">Ver mais</button>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
