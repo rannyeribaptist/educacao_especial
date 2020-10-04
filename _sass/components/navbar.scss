@@ -9,6 +9,11 @@
     color: black;
   }
 
+  &__home {
+    display: flex;
+    align-items: center
+  }
+
   &__toggle { float: right }
 
   &__padding {
@@ -28,12 +33,12 @@
     text-align: center;
     display: none;
 
-    img { display: none }
+    .logo { display: none }
 
     @include breakpoint("medium") {
       width: 100%;
       text-align: initial;
-      img { display: initial }
+      .logo { display: flex }
     }
 
     @include breakpoint("medium") { display: block }
@@ -43,7 +48,7 @@
 
   &__links {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 10px;
     padding: 0;
 
@@ -52,6 +57,7 @@
     @include breakpoint("medium") {
       float: right;
       width: fit-content;
+      margin: 0;
 
       li { display: inline; margin: 0 15px }
     }
