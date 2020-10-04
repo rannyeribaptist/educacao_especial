@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="{{ page.link_path }}assets/css/styles.css">
 
   <!-- Responsive meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,14 +47,14 @@
   <nav class="navbar">
     <div class="navbar__mobile">
       <div class="navbar__padding">
-        <a href="#"><img src="assets/images/logo-basic.png" alt="logo-educacao-especial"></a>
+        <a href="#"><img src="{{ page.link_path }}assets/images/logo-basic.png" alt="logo-educacao-especial"></a>
         <a class="navbar__toggle"><img src="https://icongr.am/entypo/menu.svg?color=000000" alt="menu-icon"></a>
       </div>
     </div>
 
     <div class="navbar__content">
       <div class="navbar__padding">
-        <a href="#"><img src="assets/images/logo-basic.png" alt="logo-educacao-especial"></a>
+        <a href="#"><img src="{{ page.link_path }}assets/images/logo-basic.png" alt="logo-educacao-especial"></a>
         <ul class="navbar__links">
           <li><a href="#about">Sobre</a></li>
           <li><a href="portfolio.html">Portfólio</a></li>
@@ -71,7 +71,7 @@
     <div class="footer__content">
       <div class="columns">
         <div class="column column--sm-1 column--md-3 footer__logo-div">
-          <img class="footer__logo" src="assets/images/logo.png" alt="logo-educacao-especial">
+          <img class="footer__logo" src="{{ page.link_path }}assets/images/logo.png" alt="logo-educacao-especial">
         </div>
 
         <div class="column column--sm-1 column--md-3">
@@ -134,7 +134,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/javascripts/script.js"></script>
+  <script type="text/javascript" src="{{ page.link_path }}assets/javascripts/script.js"></script>
 
   <!-- Slick slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>

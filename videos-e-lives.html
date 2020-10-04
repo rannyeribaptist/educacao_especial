@@ -1,0 +1,26 @@
+---
+layout: default
+title: Videos e Lives
+---
+
+<div class="section section--gradient">
+  <div class="section__content text-center">
+    <h1>Lives e vídeos</h1>
+
+    <br>
+
+    {% for video in site.videos %}
+      <div class="content-card">
+        <img class="content-card__thumb" src="{{ video.thumb }}" alt="video-thumbnail">
+        <div class="content-card__content">
+          <h3>{{ video.title }}</h3>
+          <p>{{ video.content | markdownify }}</p>
+          <a href="{{ video.url }}">
+            <button class="button button--light-blue color--white" name="button">Assistir</button>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

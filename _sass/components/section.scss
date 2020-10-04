@@ -1,0 +1,15 @@
+@import "variables";
+
+.section {
+  &--gradient {
+    background-image: linear-gradient(white, $light-grey);
+  }
+
+  &__content {
+    padding: 20px;
+    @include breakpoint("limiter");
+  }
+
+  @include colors("background-color");
+  @include breakpoint("medium") { min-height: 80vh }
+}

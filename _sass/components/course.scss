@@ -6,12 +6,14 @@
   overflow: hidden;
 
   &__text {
+    text-align: center;
+    padding-bottom: 20px;
+    
     @include breakpoint("medium") {
       width: 69%;
       display: inline-block;
       vertical-align: top;
     }
-    padding-bottom: 20px
   }
 
   &__image {
