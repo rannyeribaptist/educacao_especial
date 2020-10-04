@@ -35,6 +35,8 @@ collections:
     output: true
   events:
     output: true
+  posts:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

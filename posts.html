@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="section section--gradient">
+  <div class="section__content text-center">
+    <h1>Blog</h1>
+
+    <br>
+
+    {% for post in site.posts %}
+      <div class="content-card">
+        <img class="content-card__thumb" src="{{ post.picture-vertical }}" alt="post-thumbnail">
+        <div class="content-card__content">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description }}</p>
+          <a href="{{ post.url }}">
+            <button class="button button--light-blue color--white" name="button">Continuar lendo</button>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

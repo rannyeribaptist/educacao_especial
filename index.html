@@ -6,7 +6,23 @@ layout: default
 <section class="presentation">
   <div class="presentation__content">
     <div class="presentation__slider">
-      <img src="https://via.placeholder.com/1400x600" alt="post-banner" class="image-responsive">
+      <div class="slick-slider">
+        {% for post in site.posts %}
+          <div class="post-banner">
+            <div class="post-banner__content">
+              <h1>{{ post.title }}</h1>
+              <p>{{ post.description }}</p>
+              <a href="{{ post.url }}">
+                <button class="button button--black" name="button">Continuar lendo</button>
+              </a>
+            </div>
+            <div class="post-banner__image">
+              <img class="post-banner__horizontal" src="{{ post.picture-horizontal }}" alt="post-banner">
+              <img class="post-banner__vertical" src="{{ post.picture-vertical }}" alt="post-banner">
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="presentation__about" id="sobre">
@@ -160,7 +176,7 @@ layout: default
     <h1>Depoimentos</h1>
     <h1></h1>
 
-    <div class="slider" id="slider">
+    <div class="slick-slider">
       <div>
         <div class="testimony__card">
           <em>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Quem num gosta di mé, boa gentis num é. Interagi no mé, cursus quis, vehicula ac nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</em>
