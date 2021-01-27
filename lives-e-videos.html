@@ -11,15 +11,17 @@ title: Videos e Lives
 
     {% for video in site.videos %}
       <div class="content-card">
-        <img class="content-card__thumb" src="{{ video.thumb }}" alt="video-thumbnail">
-        <div class="content-card__content">
+        <div class="content-card__content text-center">
+          <img class="image-responsive" src="{{ video.thumb }}" alt="video-thumbnail">
           <h3>{{ video.title }}</h3>
-          <p>{{ video.content | markdownify }}</p>
+          <!-- <p>{{ video.content | markdownify }}</p> -->
           <a href="{{ video.url }}">
             <button class="button button--light-blue color--white" name="button">Assistir</button>
           </a>
         </div>
       </div>
+      <hr>
+      <br>
     {% endfor %}
 
   </div>
