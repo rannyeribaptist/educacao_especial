@@ -27,9 +27,14 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 .image-responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 500px;
 }
 
 .color { @include colors("color") }
