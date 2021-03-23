@@ -6,9 +6,9 @@ thumb: /assets/images/encontro-com-abordagem-internacional-sobre-autismo/IMG_016
 link_path: ../
 ---
 
-O Encontro com abordagem internacional sobre autismo acontece no Recife Praia Hotel e é voltado para educadores, psicólogos e famílias. Tem como objetivo ampliar a formação docente e fortalecer a atuação de educadores e família de crianças/adolescentes e adultos com Transtorno do Espectro Autista (TEA). O encontro é realizado pelo projeto Educação Especial PE, comandado pela psicopedagoga Lidieri Barros.
+O encontro com abordagem internacional sobre autismo acontece no Recife Praia Hotel e é voltado para educadores, psicólogos e famílias. Tem como objetivo ampliar a formação docente e fortalecer a atuação de educadores e família de crianças/adolescentes e adultos com Transtorno do Espectro Autista (TEA). O encontro é realizado pelo projeto Educação Especial PE, comandado pela Psicopedagoga Lidieri Barros.
 
-O Autismo é um transtorno de desenvolvimento que prejudica a capacidade da pessoa se comunicar e interagir. Essa condição também leva o paciente a viver alterações de comportamento, expressas principalmente na repetição de movimentos. Segundo o atual levantamento feito pela Organização das Nações Unidas (ONU), cerca de 1% da população mundial o equivalente a 70 milhões de pessoas. – ou um em cada 68 crianças – apresenta algum transtorno do espectro do autismo, e a ocorrência da condição neurológica tem aumentado.
+O Autismo é um transtorno de desenvolvimento que prejudica a capacidade da pessoa se comunicar e interagir. Essa condição também leva o paciente a viver alterações de comportamento, expressas principalmente na repetição de movimentos. Segundo o atual levantamento feito pela Organização das Nações Unidas (ONU), cerca de 1% da população mundial o equivalente a 70 milhões de pessoas. — Ou 1 em cada 68 crianças — apresenta algum transtorno do espectro do autismo, e a ocorrência da condição neurológica tem aumentado.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IKYymtGvQY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -34,8 +34,8 @@ layout: default
         </div>
         <div class="split__content">
           <p>Sou Lidieri Barros, formada em Pedagogia, Pós Graduada em Educação Especial, Psicopedagoga Clínica, Especialista (MA) em Inclusão/Linha de Pesquisa em Cognição.</p>
-          <p>O Consultório de Fisioterapia e Pedagogia LTDA (Matriz – Recife/PE), conta com atendimento em Psicopedagogia Clínica Individual e Terapêutico voltados para crianças, jovens e adultos com dificuldades, distúrbios ou transtornos de aprendizagem, focando a aprendizagem, mas também levando em consideração o aprendente como um todo, em seu meio e em suas relações. </p>
-          <p>Observando todas as áreas do desenvolvimento cognitivo, emocional e comportamental para identificar a sua melhor forma de aprender. Assim é possível desenvolver estratégias e aplicar técnicas de intervenção e reabilitação apropriadas para o desenvolvimento no processo de aprendizagem, tornando-o capaz de seguir com igualdade e competência na aquisição do conhecimento.</p>
+          <p>O Consultório de Fisioterapia e Pedagogia LTDA (Matriz – Recife/PE), conta com atendimento em Psicopedagogia Clínica Individual e Terapêuticos voltados para crianças, jovens e adultos com dificuldades, distúrbios ou transtornos de aprendizagem, focando a aprendizagem, mas também considerando o aprendente como um todo, em seu meio e em suas relações.</p>
+          <p>Observando todas as áreas do desenvolvimento cognitivo, emocional e comportamental para identificar a sua melhor forma de aprender. Assim, é possível desenvolver estratégias e aplicar técnicas de intervenção e reabilitação apropriadas para o desenvolvimento no processo de aprendizagem, tornando-o capaz de seguir com igualdade e competência na aquisição do conhecimento.</p>
           <!-- <p>A LB SERVIÇO DE ASSESSORIA EDUCAÇÃO ESPECIAL PE LTDA, empresa que atua em todo o Brasil e no exterior, com assessorias, cursos e treinamentos na perspectiva da inclusão. Criada pela Psicopedagoga Lidieri Barros, especialista em educação especial e inclusão, psicopedagoga, atende em todo o Brasil, sendo referência no atendimento especializado (alfabetização), a pessoas com transtorno do espectro autista, síndrome de Down, paralisia cerebral. A assessoria dispõe de todo material adaptado a necessidade de cada criança e/ou adultos acompanhado).</p> -->
         </div>
       </div>
@@ -45,7 +45,7 @@ layout: default
       <div class="columns text-center">
         <div class="column column--sm-1 column--md-3">
           <strong>Missão</strong>
-          <p>Educar e alfabetizar de forma inclusiva as pessoas com transtorno do espectro autista, síndrome de Down e paralisia cerebral, para que as mesmas possam se desenvolver e conquistarem uma vida com oportunidades, amor e respeito.</p>
+          <p>Educar e alfabetizar de forma inclusiva as pessoas com Transtorno do Espectro Autista, Síndrome de Down e paralisia cerebral, para que as mesmas possam se desenvolver e conquistarem uma vida com oportunidades, amor e respeito.</p>
         </div>
         <div class="column column--sm-1 column--md-3">
           <strong>Visão</strong>
@@ -53,7 +53,7 @@ layout: default
         </div>
         <div class="column column--sm-1 column--md-3">
           <strong>Valores</strong>
-          <p>Valorizar as pessoas e as relações; Ética; Incluir; Empreender para oferecer os melhores produtos e serviços; Perseverança</p>
+          <p>Valorizar as pessoas e as relações; Ética; Incluir; Empreender para oferecer os melhores produtos e serviços; Perseverança.</p>
         </div>
       </div>
     </div>
@@ -90,21 +90,15 @@ layout: default
 
     <div class="slider">
       <div class="slider__content">
-        <div class="slider__card">
-          <img src="https://via.placeholder.com/250x150" alt="video">
-        </div>
-        <div class="slider__card">
-          <img src="https://via.placeholder.com/250x150" alt="video">
-        </div>
-        <div class="slider__card">
-          <img src="https://via.placeholder.com/250x150" alt="video">
-        </div>
-        <div class="slider__card">
-          <img src="https://via.placeholder.com/250x150" alt="video">
-        </div>
-        <div class="slider__card">
-          <img src="https://via.placeholder.com/250x150" alt="video">
-        </div>
+        {% for video in site.videos %}
+          <div class="slider__card">
+            <a href="{{ video.url }}">
+              <div class="slider__card">
+                <img src="{{ video.thumb }}" alt="{{ video.title }}" style="max-width: 250px">
+              </div>
+            </a>
+          </div>
+        {% endfor %}
       </div>
     </div>
 
@@ -125,12 +119,11 @@ layout: default
 
     <div class="split">
       <div class="split__content">
-        <img src="https://via.placeholder.com/500x500" alt="service-thumb" class="image-responsive">
+        <img src="assets/images/55.jpg" alt="service-thumb" class="image-responsive">
       </div>
       <div class="split__content">
         <h3>Psicopedagogia clínica</h3>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Quem num gosta di mé, boa gentis num é. Interagi no mé, cursus quis, vehicula ac nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
-        <p>Aenean aliquam molestie leo, vitae iaculis nisl. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+        <p>Indicado para crianças, adolescentes e adultos que possuem queixas de dificuldades de aprendizagem.</p>
       </div>
     </div>
 
@@ -139,11 +132,10 @@ layout: default
     <div class="split split--inverted">
       <div class="split__content text-right">
         <h3>Palestras e oficinas</h3>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Quem num gosta di mé, boa gentis num é. Interagi no mé, cursus quis, vehicula ac nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
-        <p>Aenean aliquam molestie leo, vitae iaculis nisl. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+        <p>Serviço composto do: Levantamento da demanda; Definição de objetivos; Elaboração da proposta; Execução; Reavaliação.</p>
       </div>
       <div class="split__content">
-        <img src="https://via.placeholder.com/500x500" alt="service-thumb" class="image-responsive">
+        <img src="assets/images/42644645_247.jpg" alt="service-thumb" class="image-responsive">
       </div>
     </div>
 
@@ -151,12 +143,11 @@ layout: default
 
     <div class="split">
       <div class="split__content">
-        <img src="https://via.placeholder.com/500x500" alt="service-thumb" class="image-responsive">
+        <img src="assets/images/curso-gratis-de-educacao.jpg" alt="service-thumb" class="image-responsive">
       </div>
       <div class="split__content">
         <h3>Consultoria</h3>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Quem num gosta di mé, boa gentis num é. Interagi no mé, cursus quis, vehicula ac nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
-        <p>Aenean aliquam molestie leo, vitae iaculis nisl. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+        <p>Independência e autonomia em todas as áreas da vida diária. Consultoria online e presencial em qualquer estado do Brasil.</p>
       </div>
     </div>
 
@@ -171,7 +162,7 @@ layout: default
 </section>
 
 <!-- Depoiments -->
-<section class="testimony">
+<!-- <section class="testimony">
   <div class="testimony__content">
     <h1>Depoimentos</h1>
     <h1></h1>
@@ -219,4 +210,4 @@ layout: default
       </div>
     </div>
   </div>
-</section>
+</section> -->
